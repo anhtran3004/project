@@ -95,7 +95,6 @@ const Id = ({ products, categories }) => {
                         breakLinkClassName="page-link"
                         containerClassName="pagination"
                         activeClassName="active"
-
                     />
                 </div>
             </div>

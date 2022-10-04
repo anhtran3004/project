@@ -30,7 +30,7 @@ export default function Home({brands, categories, listCategoryProducts}) {
                 />
             </div>
             <div className='containers'>
-                <div className='list-brands mt-3'>
+                <div className='list-brands'>
                     <h6 style={{fontFamily: "Playfair Display"}}>Featured Brands</h6>
                     <div className='brands row'>
                         {brands.map(brand => (

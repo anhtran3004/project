@@ -1,0 +1,53 @@
+.purchasing_process{
+    padding-top: 160px;
+    text-align: center;
+}
+.containerse{
+    max-width: 1350px;
+    margin: auto;
+}
+.order_{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 125px;
+    
+}
+.list_products{
+    width: 900px;
+}
+.list_products .table_products thead{
+    background-color: #333f48;
+    color: white;
+    
+    
+}
+.list_products .table_products thead th{
+    padding-left: 30px;
+    font-weight: 600;
+    padding: 10px 30px 10px;
+}
+.amount_products{
+    font-size: 20px;
+}
+.total_bill{
+    width: 295px;
+}
+.price_unit{
+    display: flex;
+    justify-content: space-between;
+}
+.total_bill{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.apply{
+    font-size: 12px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgb(209, 209, 209);
+}
+.pay{
+    font-size: 12px;
+    margin-top: 20px;
+}

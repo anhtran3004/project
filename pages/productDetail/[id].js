@@ -191,7 +191,7 @@ const ProductDetail = ({ productData, categoriese, categories, categoryName }) =
     return (
         <Layout categories={categories}>
             <div className="category_brands containers">
-                <ul className="nav">
+                <ul className="nav" style={{paddingBottom: "65px"}}>
                     {/* <Link href="/brand">
                         <li >
                             <div className='logo'>
