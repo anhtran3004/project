@@ -46,8 +46,14 @@
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: solid 1px rgb(209, 209, 209);
+    color: gray;
 }
 .pay{
     font-size: 12px;
     margin-top: 20px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.product{
+    width: 17.85% !important;
 }
