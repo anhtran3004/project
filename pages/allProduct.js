@@ -23,7 +23,7 @@ const Id = ({ products, categories }) => {
         setPageCount(Math.ceil(products.length / itemsPerPage));
     }, [itemOffset]);
     const LINK_IMAGE = process.env.NEXT_PUBLIC_LINK_IMAGE_PRODUCT;
-   
+
     // Invoke when user click to request another page.
     const handlePageClick = (event) => {
         const newOffset = (event.selected * itemsPerPage) % products.length;
@@ -32,7 +32,7 @@ const Id = ({ products, categories }) => {
         );
         setItemOffset(newOffset);
     };
-
+    const [like, setLike] = useState(false);
     return (
         <Layout categories={categories}>
             <div className="containers">
@@ -45,28 +45,44 @@ const Id = ({ products, categories }) => {
                         {/* {currentItems && 
                             currentItems.map(item =>( */}
                         {currentItems && currentItems.map(product => (
-                            <Link href={`/productDetail/${product.id}`} key={product.id}>
-                                <div className='product' style={{ margin: "48px 14px" }}>
-                                    <div className='thumbnail-product'>
-                                        <Image
-                                            // loader={myLoader}
-                                            src={`${LINK_IMAGE}/${product.image_preview_name.split(",")[0]}.jpg`}
-                                            width="240"
-                                            height="320"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className='infor-product' id="l">
-                                        <div className='brand'>{product.brand_name}</div>
-                                        <span className={'name '}>{product.name.slice(0, 20)}</span>
-                                        <span style={{ border: "none", borderRadius: "5px" }} >...</span>
-                                        <div id="parent_p">
-                                            <div className='price'>{numberWithDots(product.price)}đ</div>
-                                            <div className='detail'>See-more</div>
+
+                            <div className='product' style={{ margin: "48px 14px" }} key={product.id}>
+                                <div className='heart' onClick={() => { like ? setLike(false) : setLike(true) }}>
+                                    {like ? (
+                                        <i className='bx bxs-heart pos' ></i>
+                                    ) :
+                                        (
+                                            <i className='bx bx-heart pos'></i>
+                                        )}
+
+
+                                    <p className="like_texts">Yêu thích</p>
+                                </div>
+                                <Link href={`/productDetail/${product.id}`} >
+                                    <div>
+                                        <div className='thumbnail-product'>
+                                            <Image
+                                                // loader={myLoader}
+                                                src={`${LINK_IMAGE}/${product.image_preview_name.split(",")[0]}.jpg`}
+                                                width="240"
+                                                height="320"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div className='infor-product' id="l">
+                                            <div className='brand'>{product.brand_name}</div>
+                                            <span className={'name '}>{product.name.slice(0, 20)}</span>
+                                            <span style={{ border: "none", borderRadius: "5px" }} >...</span>
+                                            <div id="parent_p">
+                                                <div className='price'>{numberWithDots(product.price)}đ</div>
+                                                <div className='detail'>See-more</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </Link>
+                                </Link>
+
+                            </div>
+                            // </Link>
                         ))}
                         {/* ))} */}
 
@@ -98,7 +114,7 @@ const Id = ({ products, categories }) => {
                     />
                 </div>
             </div>
-        </Layout>
+        </Layout >
     )
 }
 

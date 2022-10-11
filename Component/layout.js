@@ -68,7 +68,7 @@ const Layout = ({ children, categories }) => {
                             </form>
                         </div>
                         <span className='btn_search'>
-                            <i className="fa-solid fa-magnifying-glass"></i>
+                            <i className="fa-solid fa-magnifying-glass" style={{ fontSize: "23px", position: "relative", top: "4px" }}></i>
                         </span>
 
                         <i className="fa-solid fa-store " style={{ fontSize: "23px" }}></i>

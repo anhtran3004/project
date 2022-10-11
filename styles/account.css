@@ -128,13 +128,13 @@
     margin-top: 40px;
 }
 .heart{
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(255, 255, 255);
     width: 40px;
     height: 40px;
     position: relative;
     top: 50px;
     left: 90px;
-    z-index: 2;
+    z-index: 1;
 }
 .heart i{
     font-size: 30px;
@@ -142,6 +142,16 @@
     position: relative;
     top: 5px;
     left:5px;
+}
+.heart .pos{
+    font-size: 30px;
+    color: red;
+    position: relative;
+    top: -55px;
+    left: -55px;
+}
+.heart .bx-heart{
+    color: var(--back-ground);
 }
 .heart p{
     background-color: #333f48;
@@ -156,8 +166,19 @@
     display: none;
 
 }
+.heart .like_text{
+    position: relative;
+    top: -34px !important;
+}
+.heart .like_texts{
+    position: relative;
+    top: -94px !important;
+}
 .heart:hover{
     background-color: #333f48;
+}
+.heart:hover .bx-heart{ 
+    color: white;
 }
 .heart:hover p{
     display: block;

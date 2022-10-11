@@ -16,6 +16,7 @@ import  '../styles/mobile.css'
 import '../styles/instruction.css'
 import '../styles/account.css'
 import '../styles/order.css'
+import '../styles/login.css'
 // import '../styles/camera.css'
 import '../styles/takePicture.css'
 import 'bootstrap/dist/css/bootstrap.min.css';

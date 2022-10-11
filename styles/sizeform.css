@@ -6,6 +6,7 @@
     right: 0;
     bottom: 0;
     left:0;
+    z-index: 2;
   }
   .modal-forme{
     /* text-align: center; */
@@ -15,6 +16,7 @@
     right: 0;
     bottom: 0;
     left:0;
+    z-index: 2;
   }
   .modal-overlay-form{
     position: absolute;
