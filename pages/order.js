@@ -128,7 +128,7 @@ const Order = ({ products, categories }) => {
                             <div className="carousel-item">
                                 <img src="..." className="d-block w-100" alt="...">
                             </div> */}
-                            <div className='list-products row' >
+                            <div className='list-products row order_list' >
                             {currentItems && currentItems.map(product => (
                             <Link href={`/productDetail/${product.id}`} key={product.id}>
                                 <div className='product carousel-item active' style={{ margin: "48px 14px" }}>
