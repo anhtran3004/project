@@ -79,7 +79,7 @@ const Layout = ({ children, categories }) => {
                             <div className='number_product'>{totalProduct}</div>
                         </span>
                         <span className="tab_menu" onClick={() => { setMobile(true) }}>
-                            <i class='bx bx-menu' style={{ fontSize: "25px", position: "relative", top: "5px" }}></i>
+                            <i className='bx bx-menu' style={{ fontSize: "25px", position: "relative", top: "5px" }}></i>
                         </span>
 
                         {showCart ? (

@@ -19,6 +19,8 @@ import '../styles/order.css'
 import '../styles/login.css'
 // import '../styles/camera.css'
 import '../styles/takePicture.css'
+import '../styles/notification.css'
+import '../styles/admin.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {store} from '../store'
